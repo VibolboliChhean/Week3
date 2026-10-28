@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arail, Arial, sans-serif;
+            color: white;
+            font-weight: bold;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        header,
+        footer,
+        main,
+        .sidebar,
+        .item{
+            border-radius: 0.5rem;
+            padding: 1rem 2rem;
+        }
+
+        header{
+            background-color: #1e90ff;
+            box-shadow: 0 4px 0 #0077ea;
+            height: 100px;
+        }
+
+        footer{
+            background-color: #4169e1;
+            box-shadow: 0 4px 0 #1d44b8;
+            height: 100px;
+        }
+        .main{
+            gap: 1rem;
+            display: flex;
+            flex-grow: 1;
+        }
+        .sidebar{
+            background-color: #ff6347;
+            box-shadow: 0 4px 0 #e02200;
+            width: 11rem;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 1rem;
+            background-color: #3cb371;
+            box-shadow: 0 4px 0 #2f8d59;
+        }
+
+        .items{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            gap: 1rem;
+        }
+        .item{
+            background-color: #2f8d59;
+            box-shadow: 0 4px 0 #226741;
+            width: 7rem;
+            height: 6rem;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <div class="main">
+            <main>
+                <span>Main</span>
+                <div class="items">
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                </div>
+            </main>
+            <aside class="sidebar">sidebar</aside>
+        </div>
+
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
